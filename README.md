@@ -1,1 +1,1 @@
-# deathbyboat.github.io
+# deathbyboat.com
