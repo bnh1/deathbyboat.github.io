@@ -35,7 +35,7 @@ body {
     font-family: "Epilogue", sans-serif;
     font-weight: 300;
     line-height: 1.75;
-    letter-spacing: -0.012em;
+    letter-spacing: 0.012em;
 
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
