@@ -1,17 +1,17 @@
 :root {
-    --bg: #f7f4ef;
-    --text: #1f1f1f;
-    --muted: #77736d;
-    --line: #d7d2ca;
+    --bg: #f7f5f1;
+    --text: #1d1d1d;
+    --muted: #7d7d7d;
+    --line: #d7d3cd;
     --max-width: 760px;
 }
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --bg: #161616;
-        --text: #f1efe9;
-        --muted: #a6a29b;
-        --line: #36322d;
+        --bg: #141414;
+        --text: #f1f1f1;
+        --muted: #a0a0a0;
+        --line: #333333;
     }
 }
 
@@ -20,18 +20,20 @@
 }
 
 html {
-    font-size: 19px;
+    font-size: 18px;
 }
 
 body {
     margin: 0;
-    padding: 4rem 1.75rem;
+    padding: 4rem 1.5rem;
+
     background: var(--bg);
     color: var(--text);
 
-    font-family: "Cormorant Garamond", Georgia, serif;
-    font-weight: 400;
+    font-family: "Epilogue", sans-serif;
+    font-weight: 300;
     line-height: 1.75;
+    letter-spacing: -0.012em;
 
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
@@ -49,29 +51,26 @@ body {
     justify-content: space-between;
     align-items: flex-start;
     gap: 2rem;
-    margin-bottom: 7rem;
     flex-wrap: wrap;
+
+    margin-bottom: 7rem;
 }
 
 .site-title a {
-    text-decoration: none;
     color: var(--text);
+    text-decoration: none;
 
-    font-size: 2.4rem;
+    font-size: 1.05rem;
     font-weight: 500;
     letter-spacing: -0.02em;
 }
 
 .site-nav {
     display: flex;
-    gap: 1rem;
-    align-items: center;
+    gap: 1.25rem;
     flex-wrap: wrap;
 
-    font-family: "Inter", sans-serif;
-    font-size: 0.82rem;
-    text-transform: lowercase;
-    letter-spacing: 0.04em;
+    font-size: 0.9rem;
 }
 
 .site-nav a {
@@ -86,29 +85,29 @@ body {
 }
 
 h1, h2, h3, h4 {
-    font-weight: 500;
-    line-height: 1.04;
-    letter-spacing: -0.03em;
+    font-weight: 400;
+    line-height: 1.05;
+    letter-spacing: -0.04em;
     margin-top: 0;
 }
 
 h1 {
-    font-size: clamp(3.5rem, 10vw, 6rem);
-    margin-bottom: 1.25rem;
+    font-size: clamp(3rem, 8vw, 5.5rem);
+    margin-bottom: 1rem;
 }
 
 h2 {
-    font-size: 2.3rem;
+    font-size: 2.2rem;
     margin-top: 4rem;
 }
 
 h3 {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     margin-top: 3rem;
 }
 
 p {
-    margin: 1.6rem 0;
+    margin: 1.5rem 0;
 }
 
 a {
@@ -126,15 +125,12 @@ a:hover {
 }
 
 .article-preview h1 {
-    margin-bottom: 0.7rem;
+    margin-bottom: 0.75rem;
 }
 
 .meta {
-    font-family: "Inter", sans-serif;
-    font-size: 0.78rem;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
     color: var(--muted);
+    font-size: 0.82rem;
     margin-bottom: 2rem;
 }
 
@@ -147,12 +143,10 @@ a:hover {
 
 .article-body pre {
     overflow-x: auto;
-    padding: 1.2rem;
-    background: rgba(0,0,0,0.04);
+    padding: 1rem;
     border-radius: 4px;
-
+    background: rgba(0,0,0,0.04);
     font-size: 0.9rem;
-    line-height: 1.5;
 }
 
 .article-body code {
@@ -164,7 +158,6 @@ blockquote {
     padding-left: 1.5rem;
     border-left: 1px solid var(--line);
     color: var(--muted);
-    font-style: italic;
 }
 
 hr {
@@ -174,18 +167,18 @@ hr {
 }
 
 .site-footer {
-    margin-top: 9rem;
+    margin-top: 8rem;
     padding-top: 2rem;
+
     border-top: 1px solid var(--line);
 
-    font-family: "Inter", sans-serif;
-    font-size: 0.8rem;
     color: var(--muted);
+    font-size: 0.85rem;
 }
 
 @media (max-width: 640px) {
     body {
-        padding: 2.5rem 1.25rem;
+        padding: 2.5rem 1.2rem;
     }
 
     .site-header {
@@ -193,6 +186,6 @@ hr {
     }
 
     h1 {
-        font-size: 3.2rem;
+        font-size: 3rem;
     }
 }
