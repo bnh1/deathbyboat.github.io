@@ -1,5 +1,6 @@
 :root {
     --bg: #f7f5f1;
+    --bg: #eee;
     --text: #1d1d1d;
     --muted: #7d7d7d;
     --line: #d7d3cd;
@@ -9,6 +10,7 @@
 @media (prefers-color-scheme: dark) {
     :root {
         --bg: #141414;
+	#--bg: #eee
         --text: #f1f1f1;
         --muted: #a0a0a0;
         --line: #333333;
