@@ -1,0 +1,193 @@
+:root {
+    --bg: #f7f5f1;
+    --bg: #eee;
+    --text: #1d1d1d;
+    --muted: #7d7d7d;
+    --line: #d7d3cd;
+    --max-width: 760px;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg: #141414;
+	#--bg: #eee
+        --text: #f1f1f1;
+        --muted: #a0a0a0;
+        --line: #333333;
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 18px;
+}
+
+body {
+    margin: 0;
+    padding: 4rem 1.5rem;
+
+    background: var(--bg);
+    color: var(--text);
+
+    font-family: "Epilogue", sans-serif;
+    font-weight: 300;
+    line-height: 1.75;
+    letter-spacing: -0.012em;
+
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+.site-header,
+.content,
+.site-footer {
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+    flex-wrap: wrap;
+
+    margin-bottom: 7rem;
+}
+
+.site-title a {
+    color: var(--text);
+    text-decoration: none;
+
+    font-size: 1.05rem;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+}
+
+.site-nav {
+    display: flex;
+    gap: 1.25rem;
+    flex-wrap: wrap;
+
+    font-size: 0.9rem;
+}
+
+.site-nav a {
+    color: var(--muted);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.18s ease;
+}
+
+.site-nav a:hover {
+    border-color: var(--muted);
+}
+
+h1, h2, h3, h4 {
+    font-weight: 400;
+    line-height: 1.05;
+    letter-spacing: -0.04em;
+    margin-top: 0;
+}
+
+h1 {
+    font-size: clamp(3rem, 8vw, 5.5rem);
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 2.2rem;
+    margin-top: 4rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-top: 3rem;
+}
+
+p {
+    margin: 1.5rem 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    border-bottom: 1px solid var(--line);
+}
+
+a:hover {
+    border-color: var(--text);
+}
+
+.article-preview {
+    margin-bottom: 8rem;
+}
+
+.article-preview h1 {
+    margin-bottom: 0.75rem;
+}
+
+.meta {
+    color: var(--muted);
+    font-size: 0.82rem;
+    margin-bottom: 2rem;
+}
+
+.article-body img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 3rem 0;
+}
+
+.article-body pre {
+    overflow-x: auto;
+    padding: 1rem;
+    border-radius: 4px;
+    background: rgba(0,0,0,0.04);
+    font-size: 0.9rem;
+}
+
+.article-body code {
+    font-family: monospace;
+}
+
+blockquote {
+    margin: 3rem 0;
+    padding-left: 1.5rem;
+    border-left: 1px solid var(--line);
+    color: var(--muted);
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid var(--line);
+    margin: 5rem 0;
+}
+
+.site-footer {
+    margin-top: 8rem;
+    padding-top: 2rem;
+
+    border-top: 1px solid var(--line);
+
+    color: var(--muted);
+    font-size: 0.85rem;
+}
+
+@media (max-width: 640px) {
+    body {
+        padding: 2.5rem 1.2rem;
+    }
+
+    .site-header {
+        margin-bottom: 4rem;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+}

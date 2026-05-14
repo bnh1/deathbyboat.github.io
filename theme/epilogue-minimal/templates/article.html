@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block title %}{{ article.title }} - {{ SITENAME }}{% endblock %}
+
+{% block content %}
+    <article class="article-full">
+        <h1>{{ article.title }}</h1>
+
+        <div class="meta">
+            {{ article.locale_date }}
+        </div>
+
+        <div class="article-body">
+            {{ article.content }}
+        </div>
+    </article>
+{% endblock %}
