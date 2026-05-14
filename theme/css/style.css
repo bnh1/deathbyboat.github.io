@@ -1,5 +1,5 @@
 :root {
-    --bg: #f7f5f1;
+//    --bg: #f7f5f1;
     --bg: #eee;
     --text: #1d1d1d;
     --muted: #7d7d7d;
@@ -44,11 +44,13 @@ body {
 .site-header,
 .content,
 .site-footer {
+    letter-spacing: 0.012em;
     max-width: var(--max-width);
     margin: 0 auto;
 }
 
 .site-header {
+    letter-spacing: 0.012em;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
